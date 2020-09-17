@@ -45,7 +45,7 @@ void format_log_name(int port, std::string& filename) {
 
     gettimeofday(&tv, NULL);
     /* timezone, add 8 hours */
-    tv.tv_sec += 8 * 3600;
+    //tv.tv_sec += 8 * 3600;
     if (gmtime_r(&tv.tv_sec, &gm)) {
         strftime(day, 48, "%Y-%m-%d-%H:%M", &gm);
     }
