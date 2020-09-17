@@ -42,7 +42,11 @@ glib2-devel(2.28.8)、libpcap-devel(1.4.0)、libnet-devel(1.1.6)
 # Install
 
 ```
-git clone git@github.com:Qihoo360/mysql-sniffer.git
+连接globalconfig
+sudo ln -s /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h /usr/include/glib-2.0/
+安装
+sudo apt-get install libnet-dev
+git clone https://github.com/hongruixing/mysql-sniffer.git
 cd mysql-sniffer
 mkdir proj
 cd proj
